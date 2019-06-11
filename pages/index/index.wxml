@@ -1,0 +1,8 @@
+<!-- pages/index/index.wxml -->
+<!-- <i-row i-class="irow">
+    <i-col span="8" i-class="col-class">col-8</i-col>
+    <i-col span="8" i-class="col-class">col-8</i-col>
+    <i-col span="8" i-class="col-class">col-8</i-col>
+</i-row> -->
+<text class="" selectable="false" space="false" decode="false">hello world !</text>
+<i-message id="message" />

@@ -1,0 +1,49 @@
+/* pages/datadetail/datadetail.wxss */
+
+page{
+  width: 100%;
+}
+.viewcontainer  {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   
+  }
+.slaveinfolist{
+  margin:10px 16px;
+  font-size:14px;
+  overflow:hidden;
+  background:#fff;
+  border:1rpx solid #dddee1;
+  border-radius:5px
+}
+.detail{margin:10px 16px;
+  font-size:14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background:#fff;
+  border:1rpx solid #dddee1;
+  border-radius:5px
+}
+.dataintro{
+  width: 70%;
+  height: 80px;
+  display: inline-flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+
+}
+.datavalue{
+  width: 30%;
+  height: 80px;
+ 
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.datavalue text{
+  font-size: 18px;
+  font-weight: 600;
+}

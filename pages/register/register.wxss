@@ -1,0 +1,37 @@
+/* pages/register/index.wxss */
+page{
+    height: 100%;
+  }
+  .maincontainer{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center ;
+    align-content: flex-start;
+  
+  }
+  .container{
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center ;
+    align-content: flex-start;
+  }
+  .accout{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center ;
+    align-items: center;
+  }
+  .password{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center ;
+    align-items: center;
+  
+  }
+.resetpassword{
+    width: 100%;
+  }

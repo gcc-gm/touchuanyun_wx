@@ -1,0 +1,35 @@
+<!-- 全局的消息提醒 -->
+<i-message id="message" />
+<view class="maincontainer" hover-class="none" hover-stop-propagation="false">
+  <view class="viewimage">
+    <image class="logoimage" src="/images/login.png" mode="aspectFit" lazy-load="false" binderror="" bindload=""></image>
+  </view>
+  <view class="container" hover-class="none" hover-stop-propagation="false">
+    <view class="accout" hover-class="none" hover-stop-propagation="false">
+      <i-icon type="mine_fill" size="24" color="#80848f" />
+      <i-input bind:change="accountInput" value="" type="string" right title="账号：" mode="wrapped" placeholder="请输入账号" />
+    </view>
+    <view class="password" hover-class="none" hover-stop-propagation="false">
+      <i-icon type="lock" size="24" color="#80848f" />
+      <i-input bind:change="passwordInput" value="" type="password" right title="密码：" mode="wrapped" placeholder="请输入密码" />
+    </view>
+    <view class="loginview" hover-class="none" hover-stop-propagation="false">
+      <i-button type="success" bind:click="cloudLogin">登录</i-button>
+      <!-- Toast 轻提示 所必须的标签 -->
+      <i-toast id="toast" />
+    </view>
+    <view class="options">
+      <form>
+        <button class="textButton" bindtap="login" bindtap="register" decode="{{true}}">
+          注册 |
+        </button>
+      </form>
+      <form bindsubmit="reset" report-submit='true'>
+        <button class="textButton" formType="submit">重置密码 |</button>
+      </form>
+      <form>
+        <button class="textButton" bindtap="wxLogin">微信登录</button>
+      </form>
+    </view>
+  </view>
+</view>

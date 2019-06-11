@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "i-input": "../../dist/input/index",
+    "i-icon": "../../dist/icon/index",
+    "i-button": "../../dist/button/index",
+    "i-toast": "../../dist/toast/index",
+    "i-message": "../../dist/message/index"
+  }
+}

@@ -1,0 +1,8 @@
+/* pages/index/index.wxss */
+.irow{
+  background-color:pink;
+}
+.col-class{
+  color:red;
+  font-size: 24px;
+}

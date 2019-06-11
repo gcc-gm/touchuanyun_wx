@@ -1,0 +1,33 @@
+<!-- pages/device/device.wxml -->
+<!-- 设备 -->
+<view class='deviceview'>
+  <view class='devicelist' wx:for="{{devicesInfoList}}" wx:for-index="index" wx:key="unique">
+    <!-- 设备信息 -->
+    <view class="devicedetail" bind:tap="clickDeviceDetail" data-devid="{{item.devid}}" data-idx='{{index}}'>
+      <view class='cellview'>
+        <i-icon size='24' type="{{!item.onlineStatus?'success':'success_fill'}}" slot="icon" />
+        <text class="devicename" selectable="false" space="false" decode="false">
+          {{item.name}}
+        </text>
+      </view>
+      <view class="deviceintro" hover-class="none" hover-stop-propagation="false">
+        <view class="inup">
+          <text>编号:{{item.devid}}</text>
+          <text>类型:{{item.type}}</text>
+        </view>
+        <view class="inbottom">
+          <text>协议:{{item.protocol}}</text>
+          <text>采集频率:{{item.polling_interval}}</text>
+        </view>
+      </view>
+    </view>
+    <!-- END设备信息 -->
+  </view>
+</view>
+<view hidden="{{!hadLoadingComplete}}" class="loadcomplete">
+  <i-divider content="加载已经完成,没有其他数据" color="#2d8cf0" lineColor="#2d8cf0"></i-divider>
+</view>
+<view hidden="{{hadLoadingComplete}}" class="loadmore">
+  <i-load-more tip="加载更多数据" bind:tap="clickGetMoreData" loading="{{ canLoadingMore }}" />
+</view>
+<i-message id="message" />

@@ -1,0 +1,32 @@
+<!-- pages/datadetail/datadetail.wxml -->
+<!-- <text>pages/datadetail/datadetail.wxml</text> -->
+<view class="viewcontainer">
+    <i-card title="{{deviceInfo.name}}" extra="地址:{{deviceInfo.address}}" thumb="{{deviceInfo.img?'deviceInfo.img':'https://i.loli.net/2017/08/21/599a521472424.jpg'}}" i-class="card-image">
+        <view slot="content">
+            <text class="contentitem" selectable="false" space="false" decode="false">
+                分组:默认分组    所属用户:{{deviceInfo.account }}
+            </text>
+            <text class="contentitem" selectable="false" space="false" decode="false">
+                通信协议:{{"deviceInfo.accout "}}
+            </text>
+        </view>
+    </i-card>
+    <view class="slaveinfolist">
+        <view class="oneslave" wx:for="{{deviceSlavesList}}" wx:key="unique" wx:for-item="oneslave">
+            <i-panel title="{{oneslave.slaveName}}">
+                <view wx:for="{{oneslave.iotDataDescription}}" wx:key="unique" wx:for-item="iotdata">
+                    <view class="detail" bind:tap="checkdetail" data-slaveIndex="{{iotdata.slaveIndex}}" data-datapointid="{{iotdata.id}}">
+                        <view class="dataintro">
+                            <text>名称：{{iotdata.name}}</text>
+                            <text>时间：{{iotdata.createTime}}</text>
+                        </view>
+                        <view class="datavalue">
+                            <text>{{iotdata.value}} {{iotdata.unit}}</text>
+                        </view>
+                    </view>
+                </view>
+            </i-panel>
+        </view>
+    </view>
+</view>
+<i-message id="message" />

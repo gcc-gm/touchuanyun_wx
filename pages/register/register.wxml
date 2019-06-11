@@ -1,0 +1,19 @@
+<view class="maincontainer" hover-class="none" hover-stop-propagation="false">
+    <view class="container" hover-class="none" hover-stop-propagation="false">
+        <view class="accout" hover-class="none" hover-stop-propagation="false">
+            <i-icon type="mine_fill" size="24" color="#80848f" />
+            <i-input value="" type="string" right title="账号：" mode="wrapped" placeholder="请输入账号" />
+        </view>
+        <view class="password" hover-class="none" hover-stop-propagation="false">
+            <i-icon type="lock" size="24" color="#80848f" />
+            <i-input value="" type="password" right title="密码：" mode="wrapped" placeholder="请输入密码" />
+        </view>
+        <view class="password" hover-class="none" hover-stop-propagation="false">
+            <i-icon type="lock" size="24" color="#80848f" />
+            <i-input value="" type="password" right title="确认密码：" mode="wrapped" placeholder="请再次输入密码" />
+        </view>
+        <view class="resetpassword" hover-class="none" hover-stop-propagation="false">
+            <i-button type="success">找回密码并绑定微信</i-button>
+        </view>
+    </view>
+</view>
