@@ -58,11 +58,10 @@ Page({
       try {
         var account = wx.getStorageSync('account');
         var password = wx.getStorageSync('password');
-        // if (account && password) {
-        if (1) {
+        if (account && password) {
           this.setData({
-            account: 'luorihuanying',//luorihuanying
-            password: passwordMd5.hexMD5('as?369')
+            account: account,//luorihuanying
+            password: passwordMd5.hexMD5(password)
           });
           this.cloudLogining();//当缓存中存在账户和密码就直接调用logining()进行登录
         };
@@ -102,7 +101,11 @@ Page({
           } catch (e) {
             console.log(e);
             this.handleError('写入缓存数据失败!')
-          }
+          };
+          //跳回原来的页面
+          wx.navigateBack({
+            delta: 2
+          });
 
         } else {
           wx.showToast({

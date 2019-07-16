@@ -1,1 +1,5 @@
 /* pages/user/user.wxss */
+.userinfo{
+    margin-top: 200rpx;
+    
+}

@@ -1,2 +1,5 @@
 <!-- pages/user/user.wxml -->
-<i-button bind:click="cleardata">默认按钮</i-button>
+<view class="userinfo" hover-class="none" hover-stop-propagation="false">
+    <text class="message" selectable="false" space="false" decode="false">功能正在开发中....</text>
+    <i-button bind:click="cleardata">清除缓存</i-button>
+</view>

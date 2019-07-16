@@ -385,9 +385,9 @@ Page({
     // var connectCode = usrCloud.USR_Connect(userInfo.account, password);
     // this.handleSuccess('建立连接!!');
     // console.log('connectCode: ' + connectCode);
-    var returnCode = usrCloud.USR_PublishParsedSetSlaveDataPoint(slaveindex, datapointid, value);
-    this.handleSuccess('发送数据成功!!');
-    console.log(returnCode);
+    //var returnCode = usrCloud.USR_PublishParsedSetSlaveDataPoint(slaveindex, datapointid, value);
+    this.handleSuccess('功能正在测试!!');
+    //console.log(returnCode);
 
     // usrCloud.USR_Connect(userInfo.account, password);
     // var returnCode = usrCloud.USR_PublishParsedSetSlaveDataPoint(slaveindex, datapointid, value);
