@@ -4,12 +4,14 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": false,
+		"urlCheck": true,
 		"es6": true,
-		"enhance": false,
+		"enhance": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
+		"coverView": true,
+		"nodeModules": false,
 		"autoAudits": false,
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
@@ -18,11 +20,12 @@
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
-		}
+		},
+		"uglifyFileName": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.0",
-	"appid": "wxaa2b549b8a9d7fe9",
+	"appid": "wxe6a8ffee62f5b8a6",
 	"projectname": "wechat",
 	"debugOptions": {
 		"hidedInDevtools": []
